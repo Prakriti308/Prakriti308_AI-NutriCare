@@ -1,0 +1,123 @@
+# ============================================
+#  Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+conda-env/
+*.conda
+
+# ============================================
+#  Django
+# ============================================
+*.sqlite3
+db.sqlite3-journal
+/backend/media/
+/backend/staticfiles/
+/backend/static/
+*.log
+local_settings.py
+
+# ============================================
+#  Environment variables & secrets
+# ============================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ============================================
+#  IDE & Editor files
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ============================================
+#  OS-generated files
+# ============================================
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ============================================
+#  Jupyter Notebook
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================
+#  Testing & Coverage
+# ============================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ============================================
+#  Node (if any frontend tooling)
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ============================================
+#  ML / Data artifacts
+# ============================================
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.model
+*.onnx
+chroma_db/
+vectorstore/
+
+# ============================================
+#  Misc
+# ============================================
+*.bak
+*.tmp
+*.temp
+*.orig
+test_output.txt
+/reports/
+/backend/reports/
+/backend/test_*.py
+/backend/remove_emojis.py
+/frontend_streamlit/HOW_TO_CHAT.md
+/frontend_streamlit/README_CHATBOT.md

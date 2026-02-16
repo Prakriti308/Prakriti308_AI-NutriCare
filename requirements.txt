@@ -1,0 +1,16 @@
+# Backend - Django
+Django>=4.2,<7.0
+djangorestframework
+django-cors-headers
+python-dotenv
+
+# AI - Groq LLM & Vision
+groq
+
+# PDF & Image processing
+pypdfium2
+Pillow
+
+# Frontend - Streamlit
+streamlit
+requests
