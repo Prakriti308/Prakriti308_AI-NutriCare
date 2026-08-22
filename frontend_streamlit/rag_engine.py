@@ -93,8 +93,8 @@ class DrAIChatbot:
         self.client = Groq(api_key=api_key)
         self.context = format_diet_plan_to_text(diet_plan_data)
         self.system_message = SYSTEM_PROMPT.format(context=self.context)
-        # Model list with fallback
-        self.models = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+        # Official Groq replacements (Aug 2026 deprecations — see console.groq.com/docs/deprecations)
+        self.models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
 
     def chat(self, user_message: str, history: List[Dict[str, str]]) -> str:
         """
