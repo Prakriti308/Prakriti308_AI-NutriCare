@@ -9,7 +9,8 @@ from .ai_utils import load_document_images, get_markdown_from_page
 client = Groq(api_key=settings.GROQ_API_KEY)
 
 # Model configuration with fallbacks (primary → legacy → fast)
-TEXT_MODELS = ["llama-3.3-70b-versatile", "llama3-70b-8192", "llama-3.1-8b-instant"]
+# Official Groq replacements (Aug 2026 deprecations — see console.groq.com/docs/deprecations)
+TEXT_MODELS = ["openai/gpt-oss-120b", "qwen/qwen3.6-27b", "openai/gpt-oss-20b"]
 
 def call_groq_with_fallback(messages, response_format=None):
     """Call Groq API with automatic model fallback."""
